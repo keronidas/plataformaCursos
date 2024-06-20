@@ -1,0 +1,299 @@
+// Definición de variables de colores
+
+$color-fucsia: #D11067;
+$color-granate-oscuro: #7A1628;
+$color-amarillo: #FFF616;
+$color-amarillo-claro-fondo: #FEFBF4;
+$color-texto-general: #172655;
+$color-gris-oscuro: #333333;
+$color-verde-fondo-icono-1: #DEF5F0;
+$color-azul-fondo-icono-2: #DEF5F0;
+$color-naranja-fondo-icono-3: #DEF5F0;
+$color-gris-borde-tarjetas: #EDEDED;
+$color-gris-fondo-top-categories: #EDEDED;
+
+
+// Montserrat
+
+
+// Satisfy
+@font-face {
+    font-family: 'Satisfy';
+    src: url('../fonts/Satisfy/Satisfy-Regular.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf) format("truetype");
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: $color-fucsia;
+    color: #fff;
+    padding: 10px 0;
+}
+
+
+
+
+// Movil
+@media (min-width: 768px) {}
+
+// Tablet
+@media (min-width: 769px) and (max-width: 1024px) {}
+
+// Pc
+@media (min-width: 1025px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            padding: 15px 20px;
+        }
+
+        li.especial {
+            background-color: white;
+            border-radius: 30px;
+        }
+    }
+
+
+
+
+    nav ul li a {
+        color: inherit;
+        /* Usa el color del texto heredado */
+        text-decoration: none;
+        /* Elimina el subrayado */
+
+        &:hover {
+            color: $color-amarillo;
+            text-decoration: underline;
+        }
+    }
+
+    nav ul li.especial a {
+        color: $color-granate-oscuro;
+        font-weight: bold;
+
+        &:hover {
+            color: &$color-granate-oscuro;
+
+        }
+    }
+
+    .hero {
+        text-align: center;
+        background-image: url('../img/blackboard.jpg');
+        background-size: cover;
+        color: #fff;
+        padding: 0px 20px;
+
+        h1 {
+            font-family: 'Satisfy';
+            font-weight: 400;
+            font-size: 50px;
+
+            .amarillo {
+                color: $color-amarillo;
+
+
+            }
+        }
+    }
+
+    .search-bar {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        background-color: white;
+        padding: 10px 0px;
+        border-radius: 30px;
+        max-width: 30%;
+        margin-left: 35%;
+    }
+
+    .search-bar input {
+        border-radius: 30px;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        width: 300px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .search-bar .buscador {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        button {
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: $color-fucsia;
+            color: #fff;
+            cursor: pointer;
+
+        }
+    }
+
+    .features {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+
+    .features div {
+        text-align: center;
+    }
+
+    .courses {
+        text-align: center;
+        margin: 20px 0;
+        .textos{
+            h2 {
+                color: $color-granate-oscuro;
+                font-weight: 800px;
+            }
+        }
+    }
+
+    .course-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .course-item {
+        flex: 1 1 calc(25% - 16px); // Cada ítem ocupa el 25% del ancho del contenedor, menos el gap
+        box-sizing: border-box; // Asegura que el padding y el borde se incluyan en el ancho y alto del elemento
+        padding: 16px; // Padding interno de cada ítem
+    }
+
+    .course-item .card {
+        margin: 20px 50px;
+        border: 1px solid $color-gris-borde-tarjetas;
+        border-radius: 10px;
+    }
+
+    .course-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .course-content {
+        img {
+            width: 15px;
+            height: auto;
+            padding-left: 10px;
+        }
+
+        .titulo_cursos {
+            color: $color-granate-oscuro;
+            font-weight: 800px;
+        }
+    }
+
+    .learning-path {
+        text-align: center;
+        background-image: url(../img/learn-path.jpg);
+        padding: 50px 20px;
+        margin: 20px 0;
+    }
+
+    .solutions {
+        padding: 20px;
+    }
+
+    .solution-items {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .solution-item {
+        width: 200px;
+        margin: 10px;
+    }
+
+    .categories {
+        padding: 20px;
+        background-color: #F8F8F8;
+    }
+
+    .category-items {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .category-item {
+        width: 200px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .instructor {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .newsletter {
+        margin: 20px 0;
+    }
+
+    .newsletter input {
+        padding: 10px;
+        width: 200px;
+    }
+
+    .newsletter button {
+        padding: 10px;
+        background-color: $color-fucsia;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .footer-info {
+        margin: 20px 0;
+    }
+}

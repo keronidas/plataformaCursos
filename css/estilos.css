@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "Satisfy";
+  src: url("../fonts/Satisfy/Satisfy-Regular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf) format("truetype");
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #D11067;
+  color: #fff;
+  padding: 10px 0;
+}
+
+@media (min-width: 1025px) {
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul li {
+    padding: 15px 20px;
+  }
+  nav ul li.especial {
+    background-color: white;
+    border-radius: 30px;
+  }
+  nav ul li a {
+    color: inherit;
+    /* Usa el color del texto heredado */
+    text-decoration: none;
+    /* Elimina el subrayado */
+  }
+  nav ul li a:hover {
+    color: #FFF616;
+    text-decoration: underline;
+  }
+  nav ul li.especial a {
+    color: #7A1628;
+    font-weight: bold;
+  }
+  nav ul li.especial a:hover {
+    color: nav ul li.especial a:hover #7A1628;
+  }
+  .hero {
+    text-align: center;
+    background-image: url("../img/blackboard.jpg");
+    background-size: cover;
+    color: #fff;
+    padding: 0px 20px;
+  }
+  .hero h1 {
+    font-family: "Satisfy";
+    font-weight: 400;
+    font-size: 50px;
+  }
+  .hero h1 .amarillo {
+    color: #FFF616;
+  }
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    background-color: white;
+    padding: 10px 0px;
+    border-radius: 30px;
+    max-width: 30%;
+    margin-left: 35%;
+  }
+  .search-bar input {
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    width: 300px;
+  }
+  .search-bar input:focus {
+    outline: none;
+  }
+  .search-bar .buscador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .search-bar .buscador img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .search-bar .buscador button {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #D11067;
+    color: #fff;
+    cursor: pointer;
+  }
+  .features {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  .features div {
+    text-align: center;
+  }
+  .courses {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .courses .textos h2 {
+    color: #7A1628;
+    font-weight: 800px;
+  }
+  .course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .course-item {
+    flex: 1 1 calc(25% - 16px);
+    box-sizing: border-box;
+    padding: 16px;
+  }
+  .course-item .card {
+    margin: 20px 50px;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+  }
+  .course-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  .course-content img {
+    width: 15px;
+    height: auto;
+    padding-left: 10px;
+  }
+  .course-content .titulo_cursos {
+    color: #7A1628;
+    font-weight: 800px;
+  }
+  .learning-path {
+    text-align: center;
+    background-image: url(../img/learn-path.jpg);
+    padding: 50px 20px;
+    margin: 20px 0;
+  }
+  .solutions {
+    padding: 20px;
+  }
+  .solution-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .solution-item {
+    width: 200px;
+    margin: 10px;
+  }
+  .categories {
+    padding: 20px;
+    background-color: #F8F8F8;
+  }
+  .category-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .category-item {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+  }
+  .instructor {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .newsletter {
+    margin: 20px 0;
+  }
+  .newsletter input {
+    padding: 10px;
+    width: 200px;
+  }
+  .newsletter button {
+    padding: 10px;
+    background-color: #D11067;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  .footer-info {
+    margin: 20px 0;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
