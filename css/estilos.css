@@ -35,7 +35,7 @@ header {
   color: #fff;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   header .container-top {
     display: flex;
     justify-content: space-between;
@@ -153,6 +153,7 @@ header {
   }
   .features {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     padding: 40px 0;
   }
@@ -164,7 +165,7 @@ header {
     margin: 20px 0;
   }
   .courses .textos h2 {
-    color: #7A1628;
+    color: #D11067;
     font-weight: 800px;
   }
   .boton-normal button {
@@ -187,7 +188,7 @@ header {
     gap: 16px;
   }
   .course-item {
-    flex: 1 1 calc(50% - 16px);
+    flex: 1 1 calc(100% - 16px);
     box-sizing: border-box;
     padding: 16px;
   }
@@ -340,8 +341,7 @@ header {
     color: white;
     border-radius: 12px;
     padding: 40px 20px;
-    flex: 1 1 calc(50% - 16px);
-    max-width: calc(50% - 16px);
+    flex: 1 1 calc(100% - 16px);
     box-sizing: border-box;
     text-align: left;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -359,13 +359,9 @@ header {
     transform: translateY(-5px);
     background-color: #D11067;
   }
-  .category.large {
-    flex: 1 1 calc(50% - 16px);
-    max-width: calc(50% - 16px);
-  }
   .instructor {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -375,7 +371,7 @@ header {
     border-radius: 10px;
   }
   .instructor div {
-    width: 40%;
+    width: 100%;
     padding: 20px;
     padding-left: 30px;
     display: flex;

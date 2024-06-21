@@ -13,7 +13,7 @@ $color-gris-borde-tarjetas: #EDEDED;
 $color-gris-fondo-top-categories: #EDEDED;
 
 
-// Montserrat
+
 
 
 // Satisfy
@@ -23,7 +23,7 @@ $color-gris-fondo-top-categories: #EDEDED;
     font-weight: normal;
     font-style: normal;
 }
-
+// Montserrat
 @font-face {
     font-family: "Montserrat";
     src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf) format("truetype");
@@ -61,7 +61,7 @@ header {
 
 
 // Movil
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
     header .container-top {
         display: flex;
@@ -218,6 +218,7 @@ header {
 
     .features {
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         padding: 40px 0;
     }
@@ -232,7 +233,7 @@ header {
 
         .textos {
             h2 {
-                color: $color-granate-oscuro;
+                color: $color-fucsia;
                 font-weight: 800px;
             }
         }
@@ -266,7 +267,7 @@ header {
     }
 
     .course-item {
-        flex: 1 1 calc(50% - 16px); // Cada ítem ocupa el 25% del ancho del contenedor, menos el gap
+        flex: 1 1 calc(100% - 16px); // Cada ítem ocupa el 25% del ancho del contenedor, menos el gap
         box-sizing: border-box; // Asegura que el padding y el borde se incluyan en el ancho y alto del elemento
         padding: 16px; // Padding interno de cada ítem
     }
@@ -454,8 +455,7 @@ header {
         border-radius: 12px;
         padding: 40px 20px;
 
-        flex: 1 1 calc(50% - 16px);
-        max-width: calc(50% - 16px);
+        flex: 1 1 calc(100% - 16px);
         box-sizing: border-box;
         text-align: left;
         transition: background-color 0.3s ease, transform 0.3s ease;
@@ -477,16 +477,11 @@ header {
         }
 
 
-
-        &.large {
-            flex: 1 1 calc(50% - 16px);
-            max-width: calc(50% - 16px);
-        }
     }
 
     .instructor {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -497,7 +492,7 @@ header {
         }
 
         div {
-            width: 40%;
+            width: 100%;
             padding: 20px;
             padding-left: 30px;
             display: flex;
