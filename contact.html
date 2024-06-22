@@ -24,13 +24,27 @@
             </div>
         </div>
     </header>
+    <!-- OVERLAY -->
+    <div class="overlay" id="overlay">
+        <div class="cerrar_overlay" onclick="closeMenu()">X</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Search Courses</a></li>
+            <li><a href="become-an-instructor.html">Become an Instructor</a></li>
+            <li><a href="contact.html" class="active__link">Contact</a></li>
+            <li class="login"><a href="#">Log in</a></li>
+            <li class="especial"><a href="#">Sign up</a></li>
+        </ul>
+    </div>
+    <!-- FIN OVERLAY -->
     <section class="hero">
         <nav>
-            <ul>
+            <ul class="main-menu">
                 <div class="logo">
-                    <div class="logo">
-                        <a href="index.html"><img src="./img/logo-paideia.svg" alt="Paideia Logo"></a>
-                    </div>
+                    <a href="index.html"><img src="./img/logo-paideia.svg" alt="Paideia Logo"></a>
+                </div>
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    ☰ <!-- Icono de hamburguesa -->
                 </div>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Search Courses</a></li>
@@ -241,6 +255,31 @@
 
 
     </footer>
-</body>
 
+<script>
+    function toggleMenu() {
+        var overlay = document.getElementById('overlay');
+        overlay.style.display = 'block'; // Mostrar overlay al hacer clic en hamburguesa
+    }
+
+    // Función para cerrar overlay si se hace clic fuera de él
+    window.onclick = function (event) {
+        var overlay = document.getElementById('overlay');
+        var hamburgerMenu = document.querySelector('.hamburger-menu');
+        if (event.target == overlay) {
+            overlay.style.display = 'none'; // Ocultar overlay si se hace clic fuera de él
+        }
+    }
+
+    // Ocultar overlay al cargar la página
+    window.onload = function () {
+        var overlay = document.getElementById('overlay');
+        overlay.style.display = 'none';
+    }
+    function closeMenu() {
+        var overlay = document.getElementById('overlay');
+        overlay.style.display = 'none';
+    }
+</script>
+</body>
 </html>
