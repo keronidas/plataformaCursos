@@ -1650,6 +1650,7 @@ header {
   }
   .contenido__contacto .articulos__contacto .contacto__expo {
     min-width: 85%;
+    margin-bottom: 40px;
   }
   .contenido__contacto .articulos__contacto .contacto__expo h2,
   .contenido__contacto .articulos__contacto .contacto__expo h3 {
@@ -1677,19 +1678,37 @@ header {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     gap: 10px;
   }
-  .contenido__contacto .articulos__contacto .contacto__expo .contacto__ambassadors .contacto__ambassadors__item {
+  .contenido__contacto .articulos__contacto .contacto__expo .contacto__ambassadors .content__ambbassador__t1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     background-color: #EDEDED;
     flex: 1 1 calc(50% - 16px);
+    justify-content: center;
+    text-align: center;
+    padding: 0px 30px;
+  }
+  .contenido__contacto .articulos__contacto .contacto__expo .contacto__ambassadors .content__ambbassador__t1 .a {
+    color: #7A1628;
+  }
+  .contenido__contacto .articulos__contacto .contacto__expo .contacto__ambassadors .content__ambbassador__t1 .mailto a {
+    text-decoration: none;
+    color: #D11067;
+  }
+  .contenido__contacto .articulos__contacto .contacto__expo .contacto__ambassadors .contacto__ambassadors__item {
     display: flex;
+    flex-direction: row;
     justify-content: center;
   }
   .contenido__contacto .articulos__contacto .contacto__expo .contacto__ambassadors .contacto__ambassadors__item .card__img {
     margin: 10px 0px;
     position: relative;
     display: inline-block;
+    flex-direction: column;
     border-radius: 50%;
     /* Hace que el contenedor de la imagen sea redondeado */
     position: relative;
@@ -1749,6 +1768,12 @@ header {
     padding: 10px;
     margin: 10px 0px;
   }
+}
+.active__link {
+  color: #FFF616;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 3px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

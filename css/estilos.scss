@@ -2138,6 +2138,7 @@ header {
 
             .contacto__expo {
                 min-width: 85%;
+                margin-bottom: 40px;
 
                 h2,
                 h3 {
@@ -2160,9 +2161,6 @@ header {
                             width: fit-content;
                             flex: 1 1 calc(40% - 16px);
 
-
-
-
                             a {
                                 text-decoration: none;
                                 color: $color-fucsia;
@@ -2178,20 +2176,45 @@ header {
                         width: 90%;
                         display: flex;
                         flex-wrap: wrap;
+                        flex-direction: row;
                         justify-content: center;
                         gap: 10px;
                     }
 
-                    .contacto__ambassadors__item {
+                    .content__ambbassador__t1 {
+                        box-sizing: border-box;
+                        display: flex;
+                        flex-direction: column;
                         background-color: $color-gris-borde-tarjetas;
                         flex: 1 1 calc(50% - 16px);
+                        justify-content: center;
+                        text-align: center;
+                        padding: 0px 30px;
+
+                        .a {
+                            color: $color-granate-oscuro;
+                        }
+
+                        .mailto {
+                            a {
+                                text-decoration: none;
+                                color: $color-fucsia;
+
+                            }
+                        }
+                    }
+
+                    .contacto__ambassadors__item {
+
                         display: flex;
+                        flex-direction: row;
                         justify-content: center;
 
                         .card__img {
-                            margin:10px 0px;
+                            margin: 10px 0px;
                             position: relative;
                             display: inline-block;
+                            flex-direction: column;
                             border-radius: 50%;
                             /* Hace que el contenedor de la imagen sea redondeado */
                             position: relative;
@@ -2271,4 +2294,11 @@ header {
 
     }
 
+}
+
+.active__link {
+    color: $color-amarillo;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 3px;
 }
