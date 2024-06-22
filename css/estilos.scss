@@ -58,7 +58,10 @@ header {
     color: #fff;
 }
 
-
+.logo20x20 {
+    width: 20px;
+    height: 20px;
+}
 
 
 // Movil
@@ -482,6 +485,7 @@ header {
     }
 
     .instructor {
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -491,12 +495,13 @@ header {
 
         img {
             border-radius: 10px;
+            max-width: 80%;
         }
 
         div {
             width: 100%;
             padding: 20px;
-            padding-left: 30px;
+            padding-left: 20px;
             display: flex;
             flex-direction: column;
             justify-content: start;
@@ -693,7 +698,7 @@ header {
 
     }
 
-    // **********Segunda pagina**********
+    // **********Segunda pagina movil**********
     .contenido {
         max-width: 100vh;
         box-sizing: border-box;
@@ -758,10 +763,20 @@ header {
 
             .articulos__steps {
                 box-sizing: border-box;
-                max-width: 80vw;
 
+                .step__1,
+                .step__2,
+                .step__3,
+                .step__4 {
+                    margin-bottom: 40px;
 
-                ol {}
+                    a {
+                        color: $color-fucsia;
+                        text-decoration: none;
+
+                    }
+                }
+
 
                 .pursue {
                     display: flex;
@@ -775,6 +790,7 @@ header {
                         display: flex;
                         align-items: center;
                         font-size: 14px;
+                        padding-right: 10px;
 
                         b {
                             padding: 0px 4px;
@@ -832,6 +848,62 @@ header {
                     border-radius: 10px;
                     background-color: transparent;
                     color: $color-fucsia;
+                }
+            }
+        }
+
+
+    }
+
+    .career__path {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+
+        h3 {
+            background-color: #aecdec;
+            padding: 10px;
+            border: 1px solid black;
+            margin-bottom: 0px;
+        }
+
+        ol {
+            border: 1px solid black;
+            margin-top: 0px;
+            padding-right: 40px;
+            margin-bottom: 40px;
+
+            li {
+                font-weight: bold;
+
+                h4 {
+                    padding-left: 2px;
+                }
+
+                p {
+                    font-weight: normal;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    img {
+                        padding-right: 10px;
+                    }
+
+                    b {
+                        padding: 0px 4px;
+                    }
+                }
+
+                .img {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 20px;
                 }
             }
         }
@@ -1651,6 +1723,220 @@ header {
 
     }
 
+    // **********Segunda pagina tablet**********
+    .contenido {
+        max-width: 100vh;
+        box-sizing: border-box;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+
+
+
+        .contenido__instructor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            h1 {
+                width: 100%;
+                color: $color-fucsia;
+                font-size: 30px;
+                margin-bottom: 0;
+            }
+
+            p {
+                padding-right: 20px;
+            }
+        }
+
+        .contenido__steps {
+            box-sizing: border-box;
+
+            .intro__steps {
+                h2 {
+                    color: $color-fucsia;
+                }
+            }
+
+            .resume__steps {
+                box-sizing: border-box;
+                border: 2px solid $color-fucsia;
+                color: $color-fucsia;
+                padding: 15px;
+                margin-bottom: 10px;
+
+                ol {
+                    li {
+                        font-weight: bold;
+                        margin: 10px 0px;
+
+                        a {
+                            color: $color-fucsia;
+                            text-decoration: none;
+                            font-weight: bold;
+
+                        }
+                    }
+                }
+            }
+
+            .articulos__steps {
+                box-sizing: border-box;
+
+                .step__1,
+                .step__2,
+                .step__3,
+                .step__4 {
+                    margin-bottom: 40px;
+
+                    a {
+                        color: $color-fucsia;
+                        text-decoration: none;
+
+                    }
+                }
+
+
+                .pursue {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 10px 20px;
+                    border: 1px solid $color-gris-borde-tarjetas;
+
+
+                    p {
+                        display: flex;
+                        align-items: center;
+                        font-size: 14px;
+                        padding-right: 10px;
+
+                        b {
+                            padding: 0px 4px;
+                        }
+
+                        img {
+                            padding-right: 10px;
+                        }
+                    }
+
+                    margin-bottom: 20px;
+                }
+
+                .skills {
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 10px 20px;
+                    border: 1px solid $color-gris-borde-tarjetas;
+
+                    .primera__ul__skills {
+                        display: flex;
+                        flex-direction: row;
+                        list-style: none;
+                        padding-left: 20px;
+                        justify-content: space-between;
+                        align-items: start;
+
+
+                        li {
+                            list-style: none;
+
+                            ul {
+                                padding-left: 0px;
+
+                                li {
+                                    list-style: outside;
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                h3 {
+                    font-weight: bold;
+                }
+
+                h4 {
+                    font-weight: bold;
+
+                }
+
+                button {
+                    padding: 20px;
+                    border: 1px solid $color-fucsia;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: $color-fucsia;
+                }
+            }
+        }
+
+
+    }
+
+    .career__path {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+
+        h3 {
+            background-color: #aecdec;
+            padding: 10px;
+            border: 1px solid black;
+            margin-bottom: 0px;
+        }
+
+        ol {
+            border: 1px solid black;
+            margin-top: 0px;
+            padding-right: 40px;
+            margin-bottom: 40px;
+
+            li {
+                font-weight: bold;
+
+                h4 {
+                    padding-left: 2px;
+                }
+
+                p {
+                    font-weight: normal;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    img {
+                        padding-right: 10px;
+                    }
+
+                    b {
+                        padding: 0px 4px;
+                    }
+                }
+
+                .img {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
     // Tercera pagina tablet
     .contenido__contacto {
         box-sizing: border-box;
@@ -1750,10 +2036,9 @@ header {
                             display: inline-block;
                             flex-direction: column;
                             border-radius: 50%;
-                            /* Hace que el contenedor de la imagen sea redondeado */
+
                             position: relative;
 
-                            /* Asegura que la imagen redondeada no se desborde */
                             img {
                                 display: block;
                                 max-width: 100%;
@@ -2038,9 +2323,9 @@ header {
     }
 
     .course-item {
-        flex: 1 1 calc(25% - 16px); // Cada ítem ocupa el 25% del ancho del contenedor, menos el gap
-        box-sizing: border-box; // Asegura que el padding y el borde se incluyan en el ancho y alto del elemento
-        padding: 16px; // Padding interno de cada ítem
+        flex: 1 1 calc(25% - 16px);
+        box-sizing: border-box;
+        padding: 16px;
     }
 
     .course-item .card {
@@ -2471,7 +2756,229 @@ header {
 
     }
 
-    // Tercera pagina
+    // **********Segunda pagina pc**********
+    main.main__instructor {
+        display: flex;
+        margin-left: 10%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .contenido {
+        max-width: 100vh;
+        box-sizing: border-box;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+
+
+
+        .contenido__instructor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            h1 {
+                width: 100%;
+                color: $color-fucsia;
+                font-size: 30px;
+                margin-bottom: 0;
+            }
+
+            p {
+                padding-right: 20px;
+            }
+        }
+
+        .contenido__steps {
+            box-sizing: border-box;
+
+            .intro__steps {
+                h2 {
+                    color: $color-fucsia;
+                }
+            }
+
+            .resume__steps {
+                box-sizing: border-box;
+                border: 2px solid $color-fucsia;
+                color: $color-fucsia;
+                padding: 15px;
+                margin-bottom: 10px;
+
+                ol {
+                    li {
+                        font-weight: bold;
+                        margin: 10px 0px;
+
+                        a {
+                            color: $color-fucsia;
+                            text-decoration: none;
+                            font-weight: bold;
+
+                        }
+                    }
+                }
+            }
+
+            .articulos__steps {
+                box-sizing: border-box;
+
+                .step__1,
+                .step__2,
+                .step__3,
+                .step__4 {
+                    margin-bottom: 40px;
+
+                    a {
+                        color: $color-fucsia;
+                        text-decoration: none;
+
+                    }
+                }
+
+
+                .pursue {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 10px 20px;
+                    border: 1px solid $color-gris-borde-tarjetas;
+
+
+                    p {
+                        display: flex;
+                        align-items: center;
+                        font-size: 14px;
+                        padding-right: 10px;
+
+                        b {
+                            padding: 0px 4px;
+                        }
+
+                        img {
+                            padding-right: 10px;
+                        }
+                    }
+
+                    margin-bottom: 20px;
+                }
+
+                .skills {
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 10px 20px;
+                    border: 1px solid $color-gris-borde-tarjetas;
+
+                    .primera__ul__skills {
+                        display: flex;
+                        flex-direction: row;
+                        list-style: none;
+                        padding-left: 20px;
+                        justify-content: space-between;
+                        align-items: start;
+
+
+                        li {
+                            list-style: none;
+
+                            ul {
+                                padding-left: 0px;
+
+                                li {
+                                    list-style: outside;
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                h3 {
+                    font-weight: bold;
+                }
+
+                h4 {
+                    font-weight: bold;
+
+                }
+
+                button {
+                    padding: 20px;
+                    border: 1px solid $color-fucsia;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: $color-fucsia;
+                }
+            }
+        }
+
+    }
+
+    .career__path {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+
+        h3 {
+            background-color: #aecdec;
+            padding: 10px;
+            border: 1px solid black;
+            margin-bottom: 0px;
+        }
+
+        ol {
+            border: 1px solid black;
+            margin-top: 0px;
+            padding-right: 40px;
+            margin-bottom: 40px;
+
+            li {
+                font-weight: bold;
+
+                h4 {
+                    padding-left: 2px;
+                }
+
+                p {
+                    font-weight: normal;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    img {
+                        padding-right: 10px;
+                    }
+
+                    b {
+                        padding: 0px 4px;
+                    }
+                }
+
+                .img {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    // Tercera pagina pc
 
     .contenido__contacto {
         box-sizing: border-box;
@@ -2571,10 +3078,8 @@ header {
                             display: inline-block;
                             flex-direction: column;
                             border-radius: 50%;
-                            /* Hace que el contenedor de la imagen sea redondeado */
                             position: relative;
 
-                            /* Asegura que la imagen redondeada no se desborde */
                             img {
                                 display: block;
                                 max-width: 100%;
@@ -2711,6 +3216,7 @@ header {
         color: white;
         text-decoration: none;
     }
+
     .active__link {
         color: $color-amarillo;
         text-decoration: underline;
